@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Shree Ram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+      <img src="bgi.jpg" alt="">
+    </div>
+
+    <script>
+        var currentAudio = null;
+      
+        document.body.addEventListener('mouseover', function() {
+          // If there's a current audio, pause it
+          if (currentAudio) {
+            currentAudio.pause();
+          }
+      
+          // Create a new audio element
+          var audio = new Audio('sang.mp3');
+      
+          // Set the new audio as the current audio
+          currentAudio = audio;
+      
+          // Play the new audio
+          audio.play();
+        });
+      </script>
+
+</body>
+
+</html>
